@@ -8,6 +8,8 @@
 
 # Contents
 
+- [asdf-azure-cli  ](#asdf-azure-cli--)
+- [Contents](#contents)
 - [Dependencies](#dependencies)
 - [Install](#install)
 - [Contributing](#contributing)
@@ -34,7 +36,7 @@ azure-cli:
 
 ```shell
 # Show all installable versions
-asdf list-all azure-cli
+asdf list all azure-cli
 
 # Install specific version
 asdf install azure-cli latest

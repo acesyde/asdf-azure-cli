@@ -27,7 +27,8 @@ sort_versions() {
 list_github_tags() {
 	git ls-remote --tags --refs "$GH_REPO" |
 		grep -o 'refs/tags/.*' | cut -d/ -f3- |
-		sed 's/^v//' # NOTE: You might want to adapt this sed to remove non-version strings from tags
+		# Only catch when the tag name starts with azure-cli-{number}
+		grep -E '^azure-cli-[0-9]+'
 }
 
 list_all_versions() {
